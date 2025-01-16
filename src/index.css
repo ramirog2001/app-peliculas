@@ -1,0 +1,25 @@
+body{
+  font-family: cursive;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(74, 40, 94);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  filter: blur();
+  color: white;
+  text-align: center;
+}
+
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(10px);
+  z-index: -1;
+}
